@@ -1,15 +1,15 @@
 :root {
-  --bg: #f6f0e6;
-  --surface: rgba(255, 251, 245, 0.76);
-  --surface-strong: #fffaf2;
-  --text: #1f2a28;
-  --muted: #5b665f;
-  --line: rgba(31, 42, 40, 0.12);
-  --primary: #116466;
-  --primary-deep: #0d4b4c;
-  --accent: #df7d2b;
-  --accent-soft: #ffd8b6;
-  --shadow: 0 18px 45px rgba(42, 53, 48, 0.12);
+  --bg: #eaf6ff;
+  --surface: rgba(255, 255, 255, 0.76);
+  --surface-strong: #f9fdff;
+  --text: #16324a;
+  --muted: #4b6478;
+  --line: rgba(22, 50, 74, 0.12);
+  --primary: #5ab3e6;
+  --primary-deep: #2d84c4;
+  --accent: #f3c65c;
+  --accent-soft: #fff1c2;
+  --shadow: 0 18px 45px rgba(39, 84, 122, 0.14);
   --radius: 24px;
   --container: 1180px;
 }
@@ -27,9 +27,9 @@ body {
   font-family: "Manrope", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(223, 125, 43, 0.16), transparent 28%),
-    radial-gradient(circle at top right, rgba(17, 100, 102, 0.14), transparent 26%),
-    linear-gradient(180deg, #fbf7f0 0%, var(--bg) 100%);
+    radial-gradient(circle at top left, rgba(90, 179, 230, 0.2), transparent 28%),
+    radial-gradient(circle at top right, rgba(243, 198, 92, 0.18), transparent 24%),
+    linear-gradient(180deg, #fafdff 0%, var(--bg) 52%, #d9effd 100%);
 }
 
 body.menu-open {
@@ -56,7 +56,7 @@ a {
   gap: 1rem;
   margin-top: 1rem;
   padding: 0.9rem 1rem;
-  background: rgba(255, 248, 240, 0.75);
+  background: rgba(248, 252, 255, 0.82);
   backdrop-filter: blur(18px);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 999px;
@@ -75,8 +75,8 @@ a {
   width: 2.7rem;
   height: 2.7rem;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  color: white;
+  background: linear-gradient(135deg, var(--primary), var(--primary-deep));
+  color: #ffffff;
   font-family: "Fraunces", serif;
   font-size: 1.35rem;
 }
@@ -113,7 +113,7 @@ a {
 .nav-cta {
   padding: 0.8rem 1rem;
   border-radius: 999px;
-  background: var(--text);
+  background: var(--primary-deep);
   color: white !important;
 }
 
@@ -190,13 +190,13 @@ a {
 }
 
 .button-primary {
-  background: var(--primary);
+  background: linear-gradient(135deg, var(--primary), var(--primary-deep));
   color: white;
 }
 
 .button-secondary {
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.72);
 }
 
 .hero-points {
@@ -211,8 +211,8 @@ a {
 .hero-points li {
   padding: 0.7rem 0.95rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.62);
-  border: 1px solid rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(90, 179, 230, 0.18);
 }
 
 .hero-panel {
@@ -254,13 +254,13 @@ a {
 .status-grid a {
   padding: 1rem;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(239, 248, 255, 0.92);
   font-weight: 700;
 }
 
 .metric-card {
   padding: 1.6rem;
-  background: linear-gradient(180deg, rgba(17, 100, 102, 0.96), rgba(13, 75, 76, 0.96));
+  background: linear-gradient(180deg, rgba(90, 179, 230, 0.98), rgba(45, 132, 196, 0.98));
   color: white;
 }
 
@@ -358,7 +358,7 @@ a {
 .feature-large {
   grid-row: span 2;
   background:
-    linear-gradient(145deg, rgba(255, 242, 229, 0.95), rgba(255, 255, 255, 0.7)),
+    linear-gradient(145deg, rgba(240, 249, 255, 0.95), rgba(255, 250, 233, 0.82)),
     var(--surface);
 }
 
@@ -375,7 +375,7 @@ a {
   overflow: hidden;
   border-radius: calc(var(--radius) + 4px);
   background:
-    linear-gradient(180deg, #f9d6a5 0%, #f3c487 36%, #d5ece9 36%, #a1d2ce 100%);
+    linear-gradient(180deg, #d9f0ff 0%, #8fd0f4 34%, #fff7dd 34%, #d7ecfb 55%, #84c2ea 100%);
   box-shadow: var(--shadow);
 }
 
@@ -386,8 +386,8 @@ a {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  background: rgba(255, 236, 180, 0.88);
-  box-shadow: 0 0 50px rgba(255, 227, 133, 0.9);
+  background: rgba(245, 207, 95, 0.94);
+  box-shadow: 0 0 50px rgba(243, 198, 92, 0.85);
 }
 
 .hill {
@@ -400,13 +400,13 @@ a {
 .hill-one {
   bottom: -4rem;
   height: 13rem;
-  background: #3f7f73;
+  background: #5aaedc;
 }
 
 .hill-two {
   bottom: 3rem;
   height: 10rem;
-  background: #5c9d90;
+  background: #8bd0f2;
 }
 
 .grid-glow {
@@ -478,7 +478,7 @@ a {
     padding: 1rem;
     margin: 0 0.5rem;
     border-radius: 28px;
-    background: rgba(255, 248, 240, 0.96);
+    background: rgba(246, 252, 255, 0.98);
     box-shadow: var(--shadow);
     transform: scale(0.98) translateY(-1rem);
     opacity: 0;
@@ -495,7 +495,7 @@ a {
   .nav a {
     padding: 0.85rem 0.95rem;
     border-radius: 18px;
-    background: rgba(255, 255, 255, 0.65);
+    background: rgba(255, 255, 255, 0.88);
   }
 
   .nav-cta {
