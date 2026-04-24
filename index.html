@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Demo estática y responsive para la Municipalidad de Aguilares.">
+  <title>Municipalidad de Aguilares</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Municipalidad de Aguilares">
+        <span class="brand-mark">A</span>
+        <span class="brand-copy">
+          <strong>Aguilares</strong>
+          <small>Municipalidad</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="site-nav" class="nav">
+        <a href="#tramites">Trámites</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#ciudad">Ciudad</a>
+        <a href="#transparencia">Transparencia</a>
+        <a href="#contacto" class="nav-cta">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Demo estática para GitHub Pages</p>
+          <h1>Una web municipal más clara, rápida y pensada para celular.</h1>
+          <p class="hero-text">
+            Esta propuesta usa solo HTML, CSS y JavaScript. Prioriza acceso rápido a trámites,
+            servicios, noticias y contacto, con una interfaz más moderna y ordenada.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#tramites">Ver trámites</a>
+            <a class="button button-secondary" href="#transparencia">Explorar demo</a>
+          </div>
+          <ul class="hero-points">
+            <li>Sin frameworks ni backend</li>
+            <li>Lista para GitHub Pages</li>
+            <li>Responsive desde el primer bloque</li>
+          </ul>
+        </div>
+
+        <aside class="hero-panel">
+          <div class="status-card">
+            <span class="status-label">Acceso rápido</span>
+            <div class="status-grid">
+              <a href="#tramites">Turnos</a>
+              <a href="#tramites">Expedientes</a>
+              <a href="#servicios">Pagos</a>
+              <a href="#contacto">Atención</a>
+            </div>
+          </div>
+          <div class="metric-card">
+            <p>Servicios destacados</p>
+            <strong>24/7</strong>
+            <span>Información esencial disponible desde cualquier dispositivo.</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="strip">
+        <article>
+          <strong>Diseño orientado a vecinos</strong>
+          <p>Menos ruido visual, más acciones útiles.</p>
+        </article>
+        <article>
+          <strong>Rendimiento liviano</strong>
+          <p>Ideal para conexiones lentas y equipos modestos.</p>
+        </article>
+        <article>
+          <strong>Publicación simple</strong>
+          <p>Subís estos archivos a GitHub y ya funciona.</p>
+        </article>
+      </section>
+
+      <section id="tramites" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Trámites frecuentes</p>
+          <h2>Lo más buscado en un solo lugar.</h2>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Mi Expediente</h3>
+            <p>Consulta el estado de expedientes, movimientos y observaciones.</p>
+            <a href="#">Ingresar</a>
+          </article>
+          <article class="card">
+            <h3>Guía de Trámites</h3>
+            <p>Requisitos, costos, documentación y pasos explicados sin vueltas.</p>
+            <a href="#">Ver guía</a>
+          </article>
+          <article class="card">
+            <h3>Turnos Online</h3>
+            <p>Reserva atención para áreas municipales con horarios disponibles.</p>
+            <a href="#">Solicitar turno</a>
+          </article>
+          <article class="card">
+            <h3>Pagos y Tasas</h3>
+            <p>Acceso a boletas, vencimientos y medios de pago municipales.</p>
+            <a href="#">Ir a pagos</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="servicios" class="section section-alt">
+        <div class="section-heading">
+          <p class="eyebrow">Servicios</p>
+          <h2>Información útil, visible y ordenada.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature feature-large">
+            <span>Agenda pública</span>
+            <h3>Noticias, actividades y anuncios con prioridad visual.</h3>
+            <p>Una portada viva que puede destacar campañas, obras, vacunación, cultura o alertas.</p>
+          </article>
+          <article class="feature">
+            <span>Obras</span>
+            <h3>Seguimiento de proyectos</h3>
+            <p>Espacio para mostrar avances, plazos y estado de ejecución.</p>
+          </article>
+          <article class="feature">
+            <span>Atención</span>
+            <h3>Canales claros</h3>
+            <p>Teléfono, WhatsApp, email, ubicación y horarios en un mismo bloque.</p>
+          </article>
+          <article class="feature">
+            <span>Turismo</span>
+            <h3>Identidad local</h3>
+            <p>Una sección para fortalecer ciudad, cultura y actividades.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="ciudad" class="section city-showcase">
+        <div class="section-heading">
+          <p class="eyebrow">Ciudad</p>
+          <h2>Una portada con más identidad y menos saturación.</h2>
+        </div>
+        <div class="showcase-layout">
+          <article class="showcase-copy">
+            <p>
+              En vez de una home centrada solo en banners, esta demo propone jerarquía visual:
+              primero acciones útiles, después novedades y finalmente información institucional.
+            </p>
+            <p>
+              También está preparada para reemplazar textos o enlaces sin tocar estructura compleja.
+            </p>
+          </article>
+          <div class="showcase-art" aria-hidden="true">
+            <div class="sun"></div>
+            <div class="hill hill-one"></div>
+            <div class="hill hill-two"></div>
+            <div class="grid-glow"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="transparencia" class="section transparency">
+        <div class="section-heading">
+          <p class="eyebrow">Institucional</p>
+          <h2>Bloques listos para transparencia y gestión.</h2>
+        </div>
+        <div class="transparency-grid">
+          <article>
+            <h3>Presupuesto</h3>
+            <p>Publicación de documentos, ordenanzas y reportes descargables.</p>
+          </article>
+          <article>
+            <h3>Licitaciones</h3>
+            <p>Convocatorias abiertas con fechas, pliegos y resultados.</p>
+          </article>
+          <article>
+            <h3>Autoridades</h3>
+            <p>Información del gabinete, áreas y funciones de contacto.</p>
+          </article>
+          <article>
+            <h3>Datos útiles</h3>
+            <p>Horarios, mapas, números importantes y preguntas frecuentes.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contacto" class="section contact">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow">Contacto</p>
+            <h2>Lista para reemplazar con datos reales del municipio.</h2>
+          </div>
+          <div class="contact-list">
+            <p><strong>Dirección:</strong> San Martín 665, Aguilares</p>
+            <p><strong>Teléfono:</strong> 3865 483658</p>
+            <p><strong>Email:</strong> info@aguilares.gob.ar</p>
+            <p><strong>Horario:</strong> Lunes a viernes, 7:00 a 13:00</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Demo conceptual para Municipalidad de Aguilares.</p>
+      <a href="#inicio">Volver arriba</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
